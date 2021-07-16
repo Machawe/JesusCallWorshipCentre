@@ -1,17 +1,16 @@
 <template>
 	<mdb-container fluid class="pt-0">
 		<!-- <h1 class="my-5">Jesus Calls Worship Centre</h1> -->
-		<mdb-navbar color="white" position="top" scrolling light>
+		<mdb-navbar color="white" position="top" scrolling animation="0" light>
 			<!-- mdbNavbar brand -->
 			<mdb-navbar-brand  href="#/"> <img src="@/assets/jcwc.jpg" width="50px" alt="" /> Jesus Calls Worship Center </mdb-navbar-brand>
-			<mdb-navbar-toggler>
+			
 			
 				<mdb-navbar-nav right>
 					<mdb-form-inline class="align-items-end">
 						<mdb-btn @click="$router.push({ name: 'login' })" outline="pink" size="sm" type="button">Login</mdb-btn>
 					</mdb-form-inline>
 				</mdb-navbar-nav>
-			</mdb-navbar-toggler>
 		</mdb-navbar>
 
 		<section class="mt-0 pt-0">
@@ -281,7 +280,6 @@ import {
 	mdbContainer,
 	mdbNavbar,
 	mdbNavbarNav,
-	mdbNavbarToggler,
 	mdbNavbarBrand,
 	mdbCard,
 	mdbCardBody,
@@ -300,7 +298,6 @@ export default {
 		mdbContainer,
 		mdbNavbar,
 		mdbNavbarNav,
-		mdbNavbarToggler,
 		mdbNavbarBrand,
 		mdbCard,
 		mdbCardBody,
